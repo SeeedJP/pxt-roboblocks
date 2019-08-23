@@ -1,0 +1,12 @@
+{
+  "name": "Robo Blocks",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Blocks for connecting the micro:bit and Robo Blocks with the Grove - UART WiFi V2.",
+  "files": [
+    "main.ts"
+  ],
+  "dependencies": {
+    "core": "*"
+  }
+}
