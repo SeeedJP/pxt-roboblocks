@@ -619,7 +619,7 @@ namespace RoboBlocks {
             if (this.ValueAccelerometerY !== undefined) str += "roboMicrobitAccelerometerY\t" + this.ValueAccelerometerY.toString() + "\n";
             if (this.ValueAccelerometerZ !== undefined) str += "roboMicrobitAccelerometerZ\t" + this.ValueAccelerometerZ.toString() + "\n";
             if (this.ValueAccelerometerA !== undefined) str += "roboMicrobitAccelerometerA\t" + this.ValueAccelerometerA.toString() + "\n";
-            if (this.ValueCustomMessage !== undefined) str += "roboMicrobitCustomMessage\t" + this.NameCustomMessage + this.ValueCustomMessage.toString() + "\n";
+            if (this.ValueCustomMessage !== undefined) str += "roboMicrobitCustomMessage\t" + this.NameCustomMessage + ":" + this.ValueCustomMessage.toString() + "\n";
 
             if (str.length >= 1) {
                 if (str.charAt(str.length - 1) === "\n") {
