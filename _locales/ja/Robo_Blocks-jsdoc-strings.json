@@ -1,0 +1,18 @@
+{
+  "RoboBlocks.WiringGroveWiFi": "無線LANで通信するときの端子を設定します。",
+  "RoboBlocks.ConnectWiFi": "指定されたSSIDとパスワードの無線LANに接続します。",
+  "RoboBlocks.ConnectedWiFiSuccess": "無線LANに接続したときに実行します。",
+  "RoboBlocks.ConnectedWiFiFail": "無線LANに接続できなかったときに実行します。",
+  "RoboBlocks.DisconnectedWiFiSuccess": "無線LAN接続が切断したときに実行します。",
+  "RoboBlocks.ConnectServer": "指定した情報でRobo Blocksのルームにログインします。",
+  "RoboBlocks.ConnectedServerSuccess": "ルームにログインできたときに実行します。",
+  "RoboBlocks.ConnectedServerFail": "ルームにログインできなかったときに実行します。",
+  "RoboBlocks.DisconnectServer": "ルームからログアウトします。",
+  "RoboBlocks.DisconnectedServer": "ルームからログアウトしたときに実行します。",
+  "RoboBlocks.ConnectedRobot": "ロボットに接続したときに実行します。",
+  "RoboBlocks.DisconnectedRobot": "ロボットとの接続が切断したときに実行します。",
+  "RoboBlocks.DisconnectRobot": "ロボットとの接続を切断します。",
+  "RoboBlocks.IsConnectedRobot": "ロボットが接続中のときに真を返します。",
+  "RoboBlocks.SetValue": "ロボットに送るデータの識別子と値を指定します。",
+  "RoboBlocks.SendValue": "接続したロボットにデータを送信します。"
+}

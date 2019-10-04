@@ -1,0 +1,19 @@
+{
+  "{id:category}RoboBlocks": "Robo Blocks",
+  "RoboBlocks.WiringGroveWiFi|block": "[Grove - UART WiFi V2]|通信端子%connector",
+  "RoboBlocks.ConnectWiFi|block": "Wi-Fiに接続|SSID%ssid|パスワード%password",
+  "RoboBlocks.ConnectedWiFiSuccess|block": "Wi-Fiの接続が成功したとき",
+  "RoboBlocks.ConnectedWiFiFail|block": "Wi-Fiの接続が失敗したとき",
+  "RoboBlocks.DisconnectedWiFiSuccess|block": "Wi-Fiが切断したとき",
+  "RoboBlocks.ConnectServer|block": "ログイン|ルーム名%room|ルームパスワード%password|きみの名前%user",
+  "RoboBlocks.ConnectedServerSuccess|block": "ログインに成功したとき",
+  "RoboBlocks.ConnectedServerFail|block": "ログインに失敗したとき",
+  "RoboBlocks.DisconnectServer|block": "ログアウト",
+  "RoboBlocks.DisconnectedServer|block": "ログアウトしたとき",
+  "RoboBlocks.ConnectedRobot|block": "ロボットが接続したとき",
+  "RoboBlocks.DisconnectedRobot|block": "ロボットが切断したとき",
+  "RoboBlocks.DisconnectRobot|block": "ロボットとの接続を切断",
+  "RoboBlocks.IsConnectedRobot|block": "ロボットが接続している",
+  "RoboBlocks.SetValue|block": "送るデータの名前と値を設定|キー名%name|値%value",
+  "RoboBlocks.SendValue|block": "ロボットにデータを送る"
+}

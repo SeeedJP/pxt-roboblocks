@@ -643,9 +643,9 @@ namespace RoboBlocks {
     // RoboBlocks
 
     /**
-     * 無線LANで通信するときの端子を設定します。
+     * Select a Grove Shield port for the wireless communication.
      */
-    //% block="[Grove - UART WiFi V2]|通信端子%connector"
+    //% block="Wi-Fi communication at|%connector"
     export function WiringGroveWiFi(connector: RoboBlocksConnector): void {
         switch (connector) {
             case RoboBlocksConnector.P00P14:
@@ -661,122 +661,121 @@ namespace RoboBlocks {
     }
 
     /**
-     * 指定されたSSIDとパスワードの無線LANに接続します。
+     * Connect to a wireless network with specified SSID and password.
      */
-    //% block="Wi-Fiに接続|SSID%ssid|パスワード%password"
+    //% block="connect to Wi-Fi|SSID%ssid|password%password"
     export function ConnectWiFi(ssid: string, password: string): void {
         Controller.WiFiConnect(ssid, password);
     }
 
     /**
-     * 無線LANに接続したときに実行します。
+     * Run code when the micro:bit gets connected to a wireless network.
      */
-    //% block="Wi-Fiの接続が成功したとき"
+    //% block="on Wi-Fi connected"
     export function ConnectedWiFiSuccess(handler: () => void) {
         Controller.WiFiConnectedSuccess(handler);
     }
 
     /**
-     * 無線LANに接続できなかったときに実行します。
+     * Run code when the micro:bit cannot connect to a wireless network.
      */
-    //% block="Wi-Fiの接続が失敗したとき"
+    //% block="on failed to connect to Wi-Fi"
     export function ConnectedWiFiFail(handler: () => void) {
         Controller.WiFiConnectedFail(handler);
     }
 
     /**
-     * 無線LAN接続が切断したときに実行します。
+     * Run code when the micro:bit has lost connection with the wireless network.
      */
-    //% block="Wi-Fiが切断したとき"
+    //% block="on Wi-Fi disconnected"
     export function DisconnectedWiFiSuccess(handler: () => void) {
         Controller.WiFiDisconnected(handler);
     }
 
     /**
-     * 指定した情報でRobo Blocksのルームにログインします。
+     * Login to a room of Robo Blocks with specified information.
      */
-    //% block="ログイン|ルーム名%room|ルームパスワード%password|きみの名前%user"
+    //% block="login|Room name%room|Room password%password|Your name%user"
     export function ConnectServer(room: string, password: string, user: string): void {
         Controller.ConnectServer(room, password, user);
     }
 
     /**
-     * ルームにログインできたときに実行します。
+     * Run code when the micro:bit gets logged in to the room.
      */
-    //% block="ログインに成功したとき"
+    //% block="on login succeeded"
     export function ConnectedServerSuccess(handler: () => void) {
         Controller.ServerConnectedSuccess(handler);
     }
 
     /**
-     * ルームにログインできなかったときに実行します。
+     * Run code when the micro:bit cannot login to the room.
      */
-    //% block="ログインに失敗したとき"
+    //% block="on login failed"
     export function ConnectedServerFail(handler: () => void) {
         Controller.ServerConnectedFail(handler);
     }
 
     /**
-     * ルームからログアウトします。
+     * Log out from the room.
      */
-    //% block="ログアウト"
+    //% block="logout"
     export function DisconnectServer(): void {
         Controller.ServerDisconnect();
     }
 
     /**
-     * ルームからログアウトしたときに実行します。
+     * Run code when the micro:bit has logged out from the room.
      */
-    //% block="ログアウトしたとき"
+    //% block="on logout"
     export function DisconnectedServer(handler: () => void) {
         Controller.ServerDisconnected(handler);
     }
 
     /**
-     * ロボットに接続したときに実行します。
+     * Run code when the micro:bit gets connected to a robot.
      */
-    //% block="ロボットが接続したとき"
+    //% block="on robot connected"
     export function ConnectedRobot(handler: () => void) {
         Controller.RobotConnected(handler);
     }
 
     /**
-     * ロボットとの接続が切断したときに実行します。
+     * Run code when the micro:bit has lost connection with the robot.
      */
-    //% block="ロボットが切断したとき"
+    //% block="on robot disconnected"
     export function DisconnectedRobot(handler: () => void) {
         Controller.RobotDisconnected(handler);
     }
 
     /**
-     * ロボットとの接続を切断します。
+     * Disconnect the micro:bit from the robot.
      */
-    //% block="ロボットとの接続を切断"
+    //% block="disconnect from robot"
     export function DisconnectRobot(): void {
         Controller.RobotDisconnect();
     }
 
     /**
-     * ロボットが接続中のときに真を返します。
+     * Reports true if the micro:bit is connected to the robot.
      */
-    //% block="ロボットが接続している"
+    //% block="is robot connected"
     export function IsConnectedRobot(): boolean {
         return Controller.IsRobotConnected();
     }
 
     /**
-     * ロボットに送るデータの識別子と値を指定します。
-     *
+     * Define an identifier (key name) and a value(s) of data to send.
      */
-    //% block="送るデータの名前と値を設定|キー名%name|値%value"
+    //% block="set name and value of data|key name%name|value%value"
     export function SetValue(key: string, value: number): void {
         Controller.SetValue(key, value);
     }
 
     /**
-     * 接続したロボットにデータを送信します。
+     * Send the data to the connected robot.
      */
-    //% block="ロボットにデータを送る"
+    //% block="send data to robot"
     export function SendValue(): void {
         Controller.SendValue();
     }
